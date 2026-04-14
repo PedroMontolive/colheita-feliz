@@ -36,7 +36,12 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/local/include/**",
-                "/opt/homebrew/include/**"
+                "/opt/homebrew/include/**",
+                "/opt/homebrew/opt/sdl2/include/**",
+                "/opt/homebrew/opt/sdl2_image/include/**",
+                "/opt/homebrew/opt/sdl2_ttf/include/**",
+                "/opt/homebrew/opt/sdl2_mixer/include/**",
+                "/opt/homebrew/opt/nlohmann-json/include/**"
             ],
             "defines": [
                 "_DEBUG"
@@ -44,7 +49,7 @@
             "compilerPath": "/usr/bin/clang++",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x64"
+            "intelliSenseMode": "clang-arm64"
         }
     ],
     "version": 4

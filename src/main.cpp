@@ -18,7 +18,7 @@ int main(int argc, char* argv[]){
 
     std::cout << "Versão do SDL2: " << int(versao.major) << "." << int(versao.minor) << "." << int(versao.patch) << std::endl;
 
-    if(!IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG){
+    if(!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)){
         std::cout << "Error ao inicializar SDL2_image: " << IMG_GetError() << std::endl;
         SDL_Quit();
         return 1;
