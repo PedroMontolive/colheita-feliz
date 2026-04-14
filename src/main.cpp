@@ -26,7 +26,7 @@ int main(int argc, char* argv[]){
 
     std::cout << "SDL2_image (PNG) inicializado com sucesso!" << std::endl;
 
-    if(TTF_Init() != -1){
+    if(TTF_Init() == -1){
         std::cout << "Error ao inicializar SDL2_ttf: " << TTF_GetError() << std::endl;
         IMG_Quit();
         SDL_Quit();
